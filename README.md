@@ -18,7 +18,7 @@ A web app for students to manage group assignments and track submissions. Profes
 
 ## Tech Stack
 
-**Backend:** Node.js, Express, PostgreSQL, JWT  
+**Backend:** Node.js, Express, MongoDB, JWT  
 **Frontend:** React, Tailwind CSS  
 **Deployment:** Docker
 
@@ -27,7 +27,7 @@ A web app for students to manage group assignments and track submissions. Profes
 
 ### Requirements
 - Node.js 18+
-- PostgreSQL 15+
+- MongoDB
 - Docker (optional)
 
 ### Quick Start
@@ -36,8 +36,7 @@ A web app for students to manage group assignments and track submissions. Profes
 ```bash
 git clone <your-repo>
 cd joineazy-app
-createdb joineazy_db
-psql -d joineazy_db -f database/schema.sql
+# Make sure MongoDB is running locally or use MongoDB Atlas
 ```
 
 2. **Backend**
@@ -45,7 +44,7 @@ psql -d joineazy_db -f database/schema.sql
 cd backend
 npm install
 cp .env.example .env
-# Edit .env with your database password and JWT secret
+# Edit .env with your MongoDB connection string and JWT secret
 npm run db:init
 npm run dev
 ```
@@ -86,7 +85,7 @@ Professors log in to create assignments and check who submitted.
 joineazy-app/
 ├── backend/          # Node.js API
 ├── frontend/         # React app
-├── database/         # SQL schema
+└── docker-compose.yml
 ```
 
 ---
