@@ -1,4 +1,4 @@
-# Joineazy
+# Assign0
 
 A web app for students to manage group assignments and track submissions. Professors can create assignments and monitor progress.
 
@@ -28,14 +28,14 @@ A web app for students to manage group assignments and track submissions. Profes
 ### Requirements
 - Node.js 18+
 - MongoDB
-- Docker (optional)
+
 
 ### Quick Start
 
 1. **Clone and setup database**
 ```bash
 git clone <your-repo>
-cd joineazy-app
+cd Assign0-app
 # Make sure MongoDB is running locally or use MongoDB Atlas
 ```
 
